@@ -259,7 +259,7 @@ function td_staff_card_render( $block, $content = '', $is_preview = false, $post
     }
 
     // Assemble markup
-    $block_to_publish .= '<div class="yak-staff-card__content">' . $name . $titles . $pronouns . $bio . '</div>' . $person_featured_image;
+    $block_to_publish .= $person_featured_image . '<div class="yak-staff-card__content">' . $name . $titles . $pronouns . $bio . '</div>';
 
     $block_to_publish = '<div class="' . $class_name . '" style="--person-accent-color: ' . esc_attr( $accent ) . ';">' . $block_to_publish . '</div>';
 
