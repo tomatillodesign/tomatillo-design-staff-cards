@@ -1,0 +1,67 @@
+@layer yak-components {
+	.yak-staff-card {
+		transition: all ease-in-out .75s;
+		padding: 1.5rem;
+		background: var(--yak-color-white, #fff);
+		margin-bottom: 1.5rem;
+		border-radius: var(--yak-radius, 6px);
+		border: 1px solid #ddd;
+		display: flex;
+		align-items: flex-start;
+		gap: 1.5rem;
+	}
+
+	.yak-staff-card__image img {
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+		max-width: 200px;
+		border-radius: 50%;
+		margin-left: 1.25rem;
+		margin-bottom: 1rem;
+		border: 6px solid var(--person-accent-color, var(--yak-color-primary, #444));
+		transition: all ease-in-out .33s;
+	}
+
+	.yak-staff-card__content {
+		flex: 1;
+	}
+
+	.yak-staff-card__name {
+		font-family: var(--yak-secondary-font, system-ui, sans-serif);
+		font-weight: 700;
+		line-height: var(--yak-lh-lg, 1.45);
+		font-size: var(--yak-font-xl, 1.5rem);
+		margin: 0 0 0.5rem;
+		color: var(--yak-color-black, #000);
+        margin-bottom: 0;
+	}
+
+	.yak-staff-card__pronouns {
+		display: inline-block;
+		font-size: var(--yak-font-sm, 0.875rem);
+		padding: 0 0.5rem;
+		color: #666;
+		border: 1px solid #ccc;
+		border-radius: var(--yak-radius, 6px);
+		margin-top: 0.5rem;
+	}
+
+	.yak-staff-card__titles {
+		font-size: var(--yak-font-md, 1rem);
+		line-height: var(--yak-lh-md, 1.65);
+		font-style: italic;
+		margin-bottom: 0;
+	}
+
+	.yak-staff-card__bio {
+		font-size: var(--yak-font-sm, 0.875rem);
+		line-height: var(--yak-lh-md, 1.65);
+		margin-top: 1rem;
+		border-top: 1px dashed #ccc;
+		padding-top: 1rem;
+	}
+
+	.yak-staff-card__bio p:last-of-type {
+		margin-bottom: 0;
+	}
+}
