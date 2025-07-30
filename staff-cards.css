@@ -6,9 +6,12 @@
 		margin-bottom: 1.5rem;
 		border-radius: var(--yak-radius, 6px);
 		border: 1px solid #ddd;
-		display: flex;
-		align-items: flex-start;
-		gap: 1.5rem;
+	}
+
+	.yak-staff-card__image {
+		float: right;
+		margin-left: 2rem;
+		margin-bottom: 1rem;
 	}
 
 	.yak-staff-card__image img {
